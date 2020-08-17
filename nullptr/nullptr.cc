@@ -1,14 +1,14 @@
 #define NULL 0x0
 
-int *ret_ptr() {
-	return 0;
+auto ret_ptr() -> int * {
+	return nullptr;
 }
 
-int main() {
-	char *a = NULL;
-	char *b = 0;
+auto main() -> int {
+	char *a = nullptr;
+	char *b = nullptr;
 	char c = 0;
 	int *d = ret_ptr();
-	return d == NULL ? 0 : 1;
+	return d == nullptr ? 0 : 1;
 }
 
